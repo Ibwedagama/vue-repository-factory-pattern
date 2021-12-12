@@ -31,8 +31,8 @@ export default {
    * @param {Object} params
    * @returns Promise
    */
-  getPost(postId, params = {}) {
-    return Repository.get(`${resource}/${postId}`, { params });
+  getPostById(postId) {
+    return Repository.get(`${resource}/${postId}`);
   },
 
   /**
@@ -49,7 +49,7 @@ export default {
   //   return Repository.patch(`${resource}/${postId}`, payload)
   // },
 
-  // deletePost(postId, payload) {
+  // deletePost(postId) {
   //   return Repository.delete(`${resource}/${postId}`)
   // }
 };
