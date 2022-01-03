@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseDomain = 'https://pokeapi.co';
+const baseDomain = process.env.VUE_APP_POKEMON_API_BASE_URL;
 
 const baseURL = `${baseDomain}/api/v2`;
 

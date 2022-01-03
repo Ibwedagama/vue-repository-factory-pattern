@@ -4,7 +4,7 @@ import axios from 'axios';
  * `baseDomain` merupakan variabel yang kita gunakan untuk menyimpan
  *  domain dari API yang akan kita gunakan.
  */
-const baseDomain = 'https://jsonplaceholder.typicode.com';
+const baseDomain = process.env.VUE_APP_API_BASE_URL;
 
 /**
  * `baseURL` merupakan variabel yang kita gunakan untuk menyimpan
